@@ -1,0 +1,1 @@
+Easy Sleep is a DataPack designed to make sleeping on multiplayer servers easier. Just one person needs to sleep to go to day time.
