@@ -7,6 +7,6 @@ execute at @a[tag=InBed,nbt={Sleeping:0b}] run scoreboard players reset @p ES.Ti
 execute at @a[tag=InBed,nbt={Sleeping:0b}] run tag @p remove InBed
 
 scoreboard players add @a[tag=InBed] ES.TimeInBed 1
-execute as @a[tag=InBed,scores={ES.TimeInBed=1}] run tellraw @p [{"selector":"@p"},{"text":" is now sleeping"}]
+execute as @a[tag=InBed,scores={ES.TimeInBed=1}] run tellraw @p ["",{"selector":"@p"},{"text":" is now sleeping","color":"yellow"}]
 
 execute at @a[tag=InBed] if score @p ES.TimeInBed = TimeInBedReq ES.Options run function easy_sleep:sleep
